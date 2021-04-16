@@ -11,6 +11,10 @@
 		1AA03BEE262835FD00972ECF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA03BED262835FD00972ECF /* ContentView.swift */; };
 		1AA03BF0262835FF00972ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA03BEF262835FF00972ECF /* Assets.xcassets */; };
 		1AA03BF3262835FF00972ECF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA03BF2262835FF00972ECF /* Preview Assets.xcassets */; };
+		1AA03BFF262836F000972ECF /* PokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA03BFE262836F000972ECF /* PokemonCell.swift */; };
+		1AA03C0326283ECF00972ECF /* PokedexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA03C0226283ECF00972ECF /* PokedexView.swift */; };
+		1AA03C06262847C900972ECF /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA03C05262847C900972ECF /* Pokemon.swift */; };
+		1AA03C092628508A00972ECF /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA03C082628508A00972ECF /* PokemonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		1AA03BEF262835FF00972ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AA03BF2262835FF00972ECF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1AA03BF4262835FF00972ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AA03BFE262836F000972ECF /* PokemonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCell.swift; sourceTree = "<group>"; };
+		1AA03C0226283ECF00972ECF /* PokedexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexView.swift; sourceTree = "<group>"; };
+		1AA03C05262847C900972ECF /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		1AA03C082628508A00972ECF /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,9 @@
 		1AA03BEA262835FD00972ECF /* SwiftApp */ = {
 			isa = PBXGroup;
 			children = (
+				1AA03BFD262836A700972ECF /* Model */,
+				1AA03BFC262836A500972ECF /* View */,
+				1AA03BFB2628369D00972ECF /* View Model */,
 				1AA03BEB262835FD00972ECF /* SwiftAppApp.swift */,
 				1AA03BED262835FD00972ECF /* ContentView.swift */,
 				1AA03BEF262835FF00972ECF /* Assets.xcassets */,
@@ -67,6 +78,31 @@
 				1AA03BF2262835FF00972ECF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1AA03BFB2628369D00972ECF /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1AA03C082628508A00972ECF /* PokemonViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		1AA03BFC262836A500972ECF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1AA03BFE262836F000972ECF /* PokemonCell.swift */,
+				1AA03C0226283ECF00972ECF /* PokedexView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AA03BFD262836A700972ECF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1AA03C05262847C900972ECF /* Pokemon.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA03C06262847C900972ECF /* Pokemon.swift in Sources */,
 				1AA03BEE262835FD00972ECF /* ContentView.swift in Sources */,
+				1AA03C092628508A00972ECF /* PokemonViewModel.swift in Sources */,
 				1AA03BEC262835FD00972ECF /* SwiftAppApp.swift in Sources */,
+				1AA03BFF262836F000972ECF /* PokemonCell.swift in Sources */,
+				1AA03C0326283ECF00972ECF /* PokedexView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
