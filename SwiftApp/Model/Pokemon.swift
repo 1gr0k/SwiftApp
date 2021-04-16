@@ -6,10 +6,15 @@
 //
 
 struct Pokemon: Codable, Identifiable {
-    let id: Int
-    let name: String
-    let imageURL: String
-    let type: String
+    var attack: Int?
+    var defense: Int?
+    var description: String?
+    var height: Int?
+    var id: Int?
+    var imageUrl: String?
+    var name: String?
+    var type: String?
+    var weight: Int?
 }
 
 
@@ -19,13 +24,13 @@ struct Pokemon: Codable, Identifiable {
 
 typealias PokemonNumb = [String: Pokemon]
 
-let MOCK_POKEMON: [Pokemon] = [
-    .init(id: 0, name: "Bulbasur", imageURL: "1", type: "poison"),
-    .init(id: 1, name: "Ivysaur", imageURL: "1", type: "poison"),
-    .init(id: 2, name: "Vonusaur", imageURL: "1", type: "poison"),
-    .init(id: 3, name: "Charmander", imageURL: "1", type: "poison"),
-    .init(id: 4, name: "Charmeleon", imageURL: "1", type: "poison"),
-    .init(id: 5, name: "Charizard", imageURL: "1", type: "poison")
-
-    
-]
+//let MOCK_POKEMON: [Pokemon] = [
+//    .init(id: 0, name: "Bulbasur", imageUrl: "1", type: "poison"),
+//    .init(id: 1, name: "Ivysaur", imageUrl: "1", type: "poison"),
+//    .init(id: 2, name: "Vonusaur", imageUrl: "1", type: "poison"),
+//    .init(id: 3, name: "Charmander", imageUrl: "1", type: "poison"),
+//    .init(id: 4, name: "Charmeleon", imageUrl: "1", type: "poison"),
+//    .init(id: 5, name: "Charizard", imageUrl: "1", type: "poison")
+//
+//    
+//]

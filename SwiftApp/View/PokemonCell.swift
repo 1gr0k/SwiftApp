@@ -12,14 +12,14 @@ struct PokemonCell: View {
     var body: some View {
         ZStack {
             VStack(alignment: .leading) {
-                Text(pokemon.name.capitalized)
+                Text((pokemon.name ?? "UNKNOWN").capitalized)
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding(.top, 8)
                     .padding(.leading)
                 
                 HStack {
-                    Text(pokemon.type)
+                    Text(pokemon.type ?? "UNKNOWN")
                         .font(.subheadline).bold()
                         .foregroundColor(.white)
                         .padding(.horizontal, 16)
@@ -44,8 +44,8 @@ struct PokemonCell: View {
     }
 }
 
-struct PokemonCell_Previews: PreviewProvider {
-    static var previews: some View {
-        PokemonCell(pokemon: MOCK_POKEMON[3])
-    }
-}
+//struct PokemonCell_Previews: PreviewProvider {
+//    static var previews: some View {
+//        //PokemonCell(pokemon: MOCK_POKEMON[3])
+//    }
+//}
